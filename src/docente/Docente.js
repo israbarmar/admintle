@@ -2,6 +2,7 @@ import './docente.css';
 import profile from '../assets/profile.png'
 import Header from '../components/Header';
 import Menu from '../components/Menu';
+import { Link } from "react-router-dom";
 
 function Docente() {
     return (
@@ -45,17 +46,17 @@ function Docente() {
                         <div className='main_options_content'>
                             <div className='option'>
                                 <span class="material-symbols-outlined">person_search</span>
-                                <button><p>BUSCAR ESTUDIANTES</p></button>
+                                <button><p><Link to="/buscarestudiante">BUSCAR ESTUDIANTES</Link></p></button>
                             </div>
 
                             <div className='option'>
                                 <span class="material-symbols-outlined">list_alt</span>
-                                <button><p>LISTADO POR MATERIAS</p></button>
+                                <button><p><Link to="/listadomaterias">LISTADO POR MATERIAS</Link></p></button>
                             </div>
 
                             <div className='option'>
                                 <span class="material-symbols-outlined">account_circle</span>
-                                <button><p>HISTORIAL DEL ESTUDIANTE</p></button>
+                                <button><p><Link to="/historialestudiante">HISTORIAL DEL ESTUDIANTE</Link></p></button>
                             </div>
                         </div>
                     </div>

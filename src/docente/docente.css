@@ -127,6 +127,10 @@ header img{
     font-size: 30px;
 }
 
+.option a{
+  text-decoration: none;
+  color: white;
+}
 
 /*DocenteConfig*/
 
