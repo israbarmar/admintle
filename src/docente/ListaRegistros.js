@@ -1,16 +1,50 @@
 import { useState } from 'react';
 import './docente.css';
+import Menu from '../components/Menu';
+import Header from '../components/Header';
 
 const ListaRegistros = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [recordsPerPage, setRecordsPerPage] = useState(50);
 
-  // Datos de ejemplo (vacíos como en la imagen)
+
   const notificaciones = [];
 
   return (
+    <div className="Docente">
+     <Header />
+
+      <div className="docente_body">
+        <nav>
+          <Menu />
+        </nav>
+
     <div className="notificaciones-container">
-      {/* Controles superiores */}
+        <main>
+            <div className='head_part'>
+                <div className='left_title'>
+                    <span class="material-symbols-outlined">book_2</span>
+                    <h3>Información notificaciones</h3>
+                </div>
+
+                    <div className='right_title'>
+                        <a href='#'>Principal</a> / <a href='#'>IDocente</a> / <a href='#'>Estudiante</a>
+                    </div>
+            </div>
+
+                <div className='second_part'>
+                    <div>
+                        <p>Estudiante</p>
+                        <p>Carrera</p>
+                    </div>
+
+                    <div>
+                        <p>Gestión 2/2024</p>
+                        <p>Periodo 1</p>
+                    </div>
+
+                </div>
+        </main>
       <div className="controls-bar">
         <div className="records-control">
           <span>Mostrar</span>
@@ -104,6 +138,8 @@ const ListaRegistros = () => {
           <button className="pagination-btn prev-btn">Anterior</button>
           <button className="pagination-btn next-btn">Siguiente</button>
         </div>
+       </div>
+      </div>
       </div>
     </div>
   );

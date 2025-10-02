@@ -28,12 +28,12 @@ const navigate = useNavigate();
         <div className='data_content'>
 
           <div className='text_input'>
-            <span className='material-symbols-outlined'>account_circle</span> 
+            <span className='material-symbols-outlined icon_login'>account_circle</span> 
             <input type='text' placeholder='USUARIO' className='login_input' />
           </div>
 
           <div className='text_input'>
-            <span class="material-symbols-outlined">lock</span>
+            <span class="material-symbols-outlined icon_login">lock</span>
             <input type='password' placeholder='CONTRASEÑA'  className='login_input' /> 
           </div>
           

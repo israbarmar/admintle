@@ -7,7 +7,6 @@ const NotificacionesAnteriores = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [recordsPerPage, setRecordsPerPage] = useState(50);
 
-  // Datos de ejemplo (vacíos como en la imagen)
   const notificaciones = [];
 
   return (
